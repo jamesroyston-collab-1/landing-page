@@ -1,0 +1,190 @@
+@import '/node_modules/normalize.css/normalize.css';
+body {
+  background: #333;
+  color: cornsilk;
+  font-family: Raleway;
+}
+
+.btn {
+  border: none;
+  border-radius: 5%;
+  padding: 8px;
+  background: #999;
+  color: cornsilk;
+}
+
+
+
+/* start navbar */
+#nav-bar {
+  background: #333;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+
+.navbar-links a {
+  float: right;
+  display: block;
+  color: cornsilk;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-links a:nth-child(1) {
+  float: left;
+}
+
+.navbar-links a:hover {
+  background-color: cornsilk;
+  color: black;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  height: 650px;
+  background: url(assets/nathan-dumlao-451103-unsplash.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  font-size: 3rem;
+}
+
+.hero h1 {
+  padding: 40px;
+}
+
+#features {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  justify-content: space-evenly;
+}
+
+#features i {
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+}
+
+#features div {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  margin-left: 14px;
+  margin-right: 14px;
+  padding: 60px 14px 5px 14px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#features div:hover {
+  box-shadow: 0 28px 38px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 45px 59px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#features div h2 {
+  margin-top: 6px;
+  margin-bottom: 8px;
+} 
+
+#features div p {
+  margin-top: 0;
+}
+
+#examples {
+  background: cornsilk;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  color: #333;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#examples h2{
+  font-weight: 600;
+  font-size: 2rem;
+
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  justify-content: space-evenly;
+}
+
+#pricing > div {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 14px;
+  margin-right: 14px;
+  padding: 60px 14px 5px 14px;
+  border: 1.2px cornsilk solid;
+}
+
+#pricing>div:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border: none;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 225px;
+  background: cornsilk;
+  color: #333;
+  line-height: 1.7;
+}
+
+footer div:nth-child(4) {
+  display: flex;
+  justify-content: center;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px 10px;
+}
+
+footer div a:hover {
+  background-color: #333;
+  color: cornsilk;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+@media screen (max-width: 600px) {
+  .hero h1{
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
