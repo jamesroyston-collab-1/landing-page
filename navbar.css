@@ -1,0 +1,140 @@
+
+/* old styles */
+/* .menu-wrapper {
+  background: #333;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.hide-menu-btn {
+  display: none !important; 
+}
+.menu {
+  float: right;
+  display: block;
+  color: cornsilk;
+  text-align: center;
+  margin: 14px 4px;
+  padding: 0;
+  text-decoration: none;
+  font-size: 17px;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: cornsilk;
+  text-decoration: none;
+  padding: 14px 4px;
+}
+
+.nav-link:hover {
+  background: cornsilk;
+  color: black;
+}
+
+.menu:nth-child(1) {
+  float: left;
+  margin-left: 40px;
+}
+
+.menu:nth-child(3) {
+  margin-right: 40px;
+} */
+.menu-wrapper {
+  overflow: hidden;
+}
+
+.menu-wrapper a{
+  float: left;
+  display: block;
+  color: cornsilk;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu-wrapper a:not(:first-child):hover {
+  background: cornsilk;
+  color: #333;
+}
+
+.menu-wrapper #menu-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  /* hide links / reveal menu icon */
+  .menu-wrapper a:not(:first-child) {
+    display: none;
+  }
+
+  .menu-wrapper a#menu-btn {
+    float: right;
+    display: block;
+  }
+
+  /* responsive behavior */
+  .menu-wrapper.responsive {
+    position: relative ;
+  }
+
+  .menu-wrapper.responsive a#menu-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu-wrapper.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+
+
+
+
+
+  /* old styles below */
+  /* .menu{
+    float: none;
+    display: "";
+    margin-right: 40px;
+  }
+
+  .menu-btn {
+    border: none;
+    background: none;
+    color: cornsilk;
+  }
+
+  .menu-btn:hover {
+    color: #333;
+    background: cornsilk;
+  }
+
+  .show {
+    display: block;
+    text-align: right;
+    transition: 0.4s;
+  }
+
+  .menu:nth-child(2) {
+    float: right !important;
+    display: inline-block !important;
+    margin-right: 40px;
+  }
+  
+  .menu:nth-child(1) {
+    float: none;
+    display: inline-block;
+  } */
+}
+

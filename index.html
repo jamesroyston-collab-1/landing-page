@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,63 +9,78 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:400,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="breakpoints.css" />
   <!-- <script src="main.js"></script> -->
 </head>
+
 <body>
   <header id="header">
+
     <!-- Nav Bar -->
-    <nav id="nav-bar">
-      <div class="container">
-        <div class="navbar-links">
-          <a><img id="header-img" class="fa fa-rupee"> Doohickys</a>
-          <a href="#contact" class="nav-link">Contact</a>
-          <a href="#pricing" class="nav-link">Pricing</a>
-          <a href="#examples" class="nav-link">Examples</a>
-          <a href="#features" class="nav-link">Features</a>
-          </div>
-      </div>
-    </nav>
+  <nav id="nav-bar">
+    <div class="menu-wrapper" id="my-menu-wrapper">
+    <!-- nav menu links -->
+      <a><i class="fa fa-bomb"></i> LOGO</a>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#examples" class="nav-link">Examples</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a id="menu-btn" onclick="showMenu()" href="javascript:void(0);">
+        <i class="fa fa-bars"></i>
+      </a>
+  </nav>
+    <img src="" id="header-img" style="display: none">
   </header>
 
-  <!-- hero section and form -->
+ 
   <div class="hero">
-    <h1>Expertly crafted doohickys, to your doorstep.</h1>
+    <h1 class="wrapper">Expertly crafted doohickys, to your doorstep.</h1>
   </div>
-    
-  <div name="featuers" id="features">
+
+  
+  <div id="features" class="wrapper">
     <div>
       <i class="fa fa-codepen"></i>
       <h2>Features</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos dolore recusandae illum accusantium unde impedit corporis odio similique reprehenderit, magnam deleniti minima.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos dolore recusandae illum accusantium
+        unde impedit corporis odio similique reprehenderit, magnam deleniti minima.</p>
     </div>
-      
+
     <div>
       <i class="fa fa-code"></i>
       <h2>Features</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos dolore recusandae illum accusantium unde impedit corporis odio similique reprehenderit, magnam deleniti minima.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos dolore recusandae illum accusantium
+        unde impedit corporis odio similique reprehenderit, magnam deleniti minima.</p>
     </div>
-    
+
     <div>
       <i class="fa fa-connectdevelop"></i>
       <h2>Features</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos dolore recusandae illum accusantium unde impedit corporis odio similique reprehenderit, magnam deleniti minima.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eos dolore recusandae illum accusantium
+        unde impedit corporis odio similique reprehenderit, magnam deleniti minima.</p>
     </div>
-  
+
   </div>
 
-      
-  <div name="examples" id="examples">
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2IZ_M4b4Du0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  
+  <div id="examples" class="wrapper">
+    <iframe id="video" src="https://www.youtube.com/embed/2IZ_M4b4Du0?rel=0&amp;showinfo=0" frameborder="0" allow=""
+      allowfullscreen></iframe>
     <div>
       <h2>&nbsp; Lorem Ipsum Lorem</h2>
       <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minima illo dolores repellendus voluptate, dolor totam sint atque repellat laboriosam voluptatum magni debitis omnis velit magnam deserunt temporibus earum eius?</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minima illo dolores repellendus voluptate, dolor totam sint atque repellat laboriosam voluptatum magni debitis omnis velit magnam deserunt temporibus earum eius?</li>
-      </ul>    
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minima illo dolores repellendus voluptate,
+          dolor totam sint atque repellat laboriosam voluptatum magni debitis omnis velit magnam deserunt temporibus
+          earum eius?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minima illo dolores repellendus voluptate,
+          dolor totam sint atque repellat laboriosam voluptatum magni debitis omnis velit magnam deserunt temporibus
+          earum eius?</li>
+      </ul>
     </div>
   </div>
 
-  <div name="#pricing" id="pricing">
+  
+  <div id="pricing" class="">
     <div>
       <div>Option 1</div>
       <h2>$199</h2>
@@ -103,23 +119,43 @@
       <button class="btn">SELECT</button>
     </div>
   </div>
+  <hr>
 
-  <div>
-    <form id="form">
-      <input type="email" id="email" placeholder="Enter your email">
-      <button class="btn" id="submit">SUBMIT</button>
+
+  <div class="wrapper">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" type="email" id="email" placeholder="Enter your email">
+      <input name="submit" type="submit" id="submit" value="Send Request" />
     </form>
   </div>
 
   <footer>
-    <div id="#contact">
-      <span><a href="#" >Privacy</a></span>
-      <span><a href="#" >Terms of Service</a></span>
-      <span><a href="#Contact" >Contact</a></span>
+
+    <div id="contact" class="">
+      <span><a href="#">Privacy</a></span>
+      <span><a href="#">Terms of Service</a></span>
+      <span><a href="#Contact">Contact</a></span>
       <div><i class="fa fa-copyright"></i>Copyright 2018, Doohickys</div>
     </div>
   </footer>
-    
-<script src="fcc-tests.js"></script>
+
+  <script>
+      function showMenu() {
+        var menu = document.querySelector("#my-menu-wrapper");
+        if (menu.className === "menu-wrapper") {
+          menu.className += " responsive";
+        } else {
+          menu.className = "menu-wrapper";
+        }
+      }
+  </script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
