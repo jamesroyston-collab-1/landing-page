@@ -9,9 +9,10 @@ body {
   margin: 0 auto;
 }
 
-.wrapper {
+#wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 
@@ -190,8 +191,6 @@ body {
   }
 }
 
-
-
 #pricing {
   display: flex;
   flex-direction: row;
@@ -215,6 +214,18 @@ body {
   border: none;
 }
 
+@media (max-width: 600px) {
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pricing div {
+    width: 81%;
+    margin: 20px 0;
+  }
+}
+
 #form {
   display: flex;
   justify-content: center;
@@ -231,21 +242,22 @@ footer {
   line-height: 1.7;
 }
 
-footer div:nth-child(4) {
-  display: flex;
-  justify-content: center;
-}
-
-footer div a {
+footer a {
   text-decoration: none;
   color: #333;
-  font-size: 20px;
-  margin-left: 40px;
+  font-size: 17px;
   padding: 5px 10px;
 }
 
-footer div a:hover {
-  background-color: #333;
-  color: cornsilk;
+footer a:not(:last-child):hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
